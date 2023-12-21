@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "react-datepicker/dist/react-datepicker.css";
 
 const SearchComponent = () => {

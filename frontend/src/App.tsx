@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles/App.css";
 import SearchComponent from "./components/Search/SearchComponent";
-import CandidateRegistration from "./components/InterviewProcess/CandidateRegistration";
-import InterviewWorkflow from "./components/InterviewProcess/InterviewWorkflow";
+// import CandidateRegistration from "./components/InterviewProcess/CandidateRegistration";
+// import InterviewWorkflow from "./components/InterviewProcess/InterviewWorkflow";
 import Onboarding from "./components/Onboarding/Onboarding";
 
 function App() {
