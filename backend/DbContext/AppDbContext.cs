@@ -14,4 +14,6 @@ public class ApplicationDBContext : DbContext {
     }
 
     public DbSet<Employee> Employees { get; set; }
+
+    public DbSet<Candidate> Candidates { get; set; }
 }

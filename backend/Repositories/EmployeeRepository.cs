@@ -13,7 +13,7 @@ public class EmployeeRepository {
     }
 
     public Employee GetEmployeeById(int id) {
-        return _context.Employees.FirstOrDefault(e => e.Id == id);
+        return _context.Employees.FirstOrDefault(e => e.Id == id)!;
     }
 
 
