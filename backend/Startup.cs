@@ -10,6 +10,14 @@ public class Startup {
     }
 
     public void CofigureServices(IServiceCollection services) {
-        services.AddDbContext<ApplicationDBContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+        if (Configuration["Environment"] == "Testing")
+        {
+            services.AddDbContext<ApplicationDBContext>(options =>
+            {
+                options.UseInMemoryDatabase("TestDatabase");
+            });
+        } else {
+            services.AddDbContext<ApplicationDBContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+        }
     }
 }
